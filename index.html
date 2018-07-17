@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/video.css" />
+		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+				var top = 10;
+				var idplus = 1;
+				$("#fasong").click(function(){
+					
+					var str = document.getElementById("danmu").value;
+					var message = "<span id =\"span"+idplus+"\">" +str+ "</span>";
+					
+					if(top < 390){
+						top = top+30;
+					}
+					else{
+						top = 10;
+					}
+					var id = "#span"+idplus;
+					$("#video").append(message);
+					$(id).css({
+						"width":"100px",
+						"left":"910px",
+						"top":top
+					}).animate({
+						left : '-110px'
+					},10000);//为什么执行完后没有动画了
+						
+					idplus = idplus +1;
+					
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="bullet">
+			<div id="video">
+				<video src ="img/猎人-宋雨喆_高清.mp4" autoplay="autoplay" class="myVideo">video</video>
+			</div>
+			
+			<div>
+				<input id="danmu" name="danmu"  value="请输入弹幕"/>
+				<button id="fasong">发送</button>	
+			</div>
+		</div>
+	</body>
+
+</html>

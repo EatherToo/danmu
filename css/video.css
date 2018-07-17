@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+	background-color: lightskyblue;
+}
+.bullet{
+	height: 477px;
+	width: 800px;
+	background-color: lightgray;
+	overflow: hidden;
+	
+	/*margin-left: auto;
+	margin-right: auto;
+	vertical-align:middle;
+	line-height:200px;*/
+	
+	position: relative;
+	margin: auto;
+}
+video{
+	position: absolute;
+}
+span{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.myVideo{
+	width: 800px;
+	position: relative;
+}
+
+#danmu #fasong{
+	float: left;
+	
+}
+#danmu{
+	height: 26px;
+	width: 753px;
+	background-color: whitesmoke;
+	border:0px solid lightgray
+}
+#fasong{
+	height: 26px;
+	width: 40px;
+	border-radius: 3px;
+	border:1px solid lightgray;
+	background-color: darkgray;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
